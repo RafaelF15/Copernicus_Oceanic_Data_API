@@ -44,7 +44,7 @@ GET /ocean-data/
 | max\_lat    | float  | Yes      | Maximum latitude                          |
 | min\_depth  | float  | No       | Minimum depth (default: 0)                |
 | max\_depth  | float  | No       | Maximum depth (default: surface)          |
-| variables   | string | Yes      | Comma-separated list of variables         |
+| variables   | string | Yes      | Comma-separated list of variables (The variables for each dataset can be found in the copernicus marine webpage for that dataset. Every dataset has different variables.)         |
 | start\_date | string | Yes      | Start date in YYYY-MM-DD format           |
 | end\_date   | string | Yes      | End date in YYYY-MM-DD format             |
 
@@ -69,6 +69,18 @@ GET /ocean-data/?dataset_id=cmems_mod_glo_phy-cur_anfc_0.083deg_P1D-m&min_lon=35
 ```
 
 ## Other information
-The available datasets, as well as the id and variables for each dataset can be found in the [Copernicus Marine  Data store](https://data.marine.copernicus.eu/products)
+The available datasets, as well as the id and variables for each dataset can be found in the [Copernicus Marine Data Store](https://data.marine.copernicus.eu/products)
 
 [Dataset used in the example request](https://data.marine.copernicus.eu/product/GLOBAL_ANALYSISFORECAST_PHY_001_024/download?dataset=cmems_mod_glo_phy-cur_anfc_0.083deg_P1D-m_202406)
+
+### How to find the variables for a dataset
+
+1. Choose your product from the Copernicus Marine Data Store
+![Data Store](images/dataStore.png)
+
+2. Choose the desired dataset from that product and open its form
+![Product Page](images/productPage.png)
+![Dataset Page](images/datasets.png)
+
+3. You can now see the variables available for your dataset
+![Dataset Form](images/datasetForm.png)
